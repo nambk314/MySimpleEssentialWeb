@@ -1,0 +1,163 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  text-align: center;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  margin-top: 8vh;
+  margin-bottom: 6vh;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #cfcfcf;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 4rem 0;
+}
+
+.feature {
+  flex: 1 1 200px;
+  max-width: 250px;
+  padding: 1.5rem;
+  background: #1a1a1a;
+  border-radius: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+.feature:hover {
+  background: #2a2a2a;
+}
+
+/* Grid layout */
+.grid-2x3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Screenshots */
+.screenshots {
+  margin: 4rem 0;
+}
+
+.screenshot-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.screenshot-container img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+/* FAQ */
+.faq {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+  color: #00ff99;
+  margin-bottom: 0.5rem;
+}
+
+/* Privacy Section */
+.privacy-section {
+  max-width: 700px;
+  margin: 4rem auto;
+  text-align: left;
+  border-top: 1px solid #222;
+  padding-top: 2rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  border-top: 1px solid #222;
+  padding-top: 2rem;
+}
+
+footer h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.footer-note {
+  margin-top: 1.5rem;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* Links */
+a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav.links {
+  margin-top: 3rem;
+}
+
+nav.links a {
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .feature {
+    font-size: 0.95rem;
+  }
+}
